@@ -15,7 +15,7 @@ then
         DISTRIB_ID="Debian"
         #kali tracks Debian testing/unstable. using 'bookworm' (stable Debian) as a fallback
         VERSION_CODENAME="bookworm"
-    elif [ "$ID" = "ubuntu" ]; then
+    elif [ "$ID" = "ubuntu" ] || [ "$ID" = "pop" ]; then
         DISTRIB_ID="Ubuntu"
         # Get the current  release
         VERSION_CODENAME=$(lsb_release -cs)
